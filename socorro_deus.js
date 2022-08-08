@@ -1,8 +1,8 @@
 $("#btn").on("click", function(){
-    var numCep = $("#cep").val();
+    var cepNum = $("#cep").val();
 
     $.ajax({
-        url: "https://viacep.com.br/ws/"+numCep+"/json",
+        url: "https://viacep.com.br/ws/"+cepNum+"/json",
 
         type: "get",
         dataType: "json",
